@@ -1,0 +1,498 @@
+===================================================================================================================
+                                         ОТЧЕТ: СПИСОК ПОГИБШИХ ПЕРСОНАЖЕЙ                                         
+===================================================================================================================
+  id                                        имя                            дом                культура пол  возраст
+   4                                Aemma Arryn                    House Arryn              Неизвестно Жен     23.0
+   7                           Valarr Targaryen                House Targaryen                Valyrian Муж     26.0
+   8                        Viserys I Targaryen                       Нет дома              Неизвестно Муж     27.0
+   9                                    Wilbert                       Нет дома              Неизвестно Муж     27.0
+  11                                       Will                  Night's Watch              Неизвестно Муж     27.0
+  26                           Willow Witch-eye                       Нет дома               Free Folk Жен     27.0
+  27                                       Woth                       Нет дома              Неизвестно Муж     27.0
+  30                                Wyl (guard)                    House Stark                Northmen Жен     27.0
+  31                               Wyl Waynwood                 House Waynwood              Неизвестно Жен     27.0
+  42                                Young Henly                  Night's Watch              Неизвестно Муж     59.0
+  51                          Joffrey Baratheon                       Нет дома              Неизвестно Муж     27.0
+  52                            Laenor Velaryon                 House Velaryon                Valyrian Муж     26.0
+  53                           Leobald Tallhart                 House Tallhart                Northmen Муж     27.0
+  54                         Maegor I Targaryen                       Нет дома              Неизвестно Муж     27.0
+  56                           Naerys Targaryen                House Targaryen                Valyrian Жен    100.0
+  59                            Quellon Greyjoy                  House Greyjoy                Ironborn Муж     27.0
+  60                          Quentyn Blackwood                House Blackwood              Неизвестно Жен     27.0
+  66                                      Quort                       wildling              Неизвестно Муж     14.0
+  67                                       Qyle                       Нет дома              Неизвестно Муж     27.0
+  73                                       Rast                  Night's Watch              Неизвестно Муж     27.0
+  81                                  Red Rolfe                  House Greyjoy              Неизвестно Муж     27.0
+  85                          Rhaegel Targaryen                House Targaryen                Valyrian Муж     42.0
+  86      Rhaena Targaryen (daughter of Daemon)                House Targaryen              Неизвестно Жен    100.0
+  87   Rhaena Targaryen (daughter of Aegon III)                House Targaryen                Valyrian Жен    100.0
+  88                          Rhaenys Targaryen                House Targaryen                Valyrian Жен     35.0
+  89    Rhaenys Targaryen (daughter of Rhaegar)                House Targaryen              Неизвестно Жен      3.0
+  91      Rhaenys Targaryen (daughter of Aemon)                House Targaryen                Valyrian Жен     55.0
+  93                             Richard Farrow                   House Farrow              Неизвестно Жен     27.0
+ 102                                 Robb Stark                       Нет дома              Неизвестно Муж     27.0
+ 110                         Roger of Pennytree                       Нет дома              Неизвестно Муж     27.0
+ 128                                      Rowan                       Нет дома               Free folk Муж     27.0
+ 130                                   Runciter                       Нет дома              Неизвестно Муж     27.0
+ 136                                      Ryles                  Night's Watch              Неизвестно Жен     27.0
+ 141                                     Sallor                     Stormcrows                Qartheen Муж     27.0
+ 165                                   Softfoot                  Night's Watch              Неизвестно Муж     27.0
+ 166                 Spotted Pate of Maidenpool                  Night's Watch              Неизвестно Муж     27.0
+ 167                                     Squint                  House Greyjoy              Неизвестно Жен     27.0
+ 168                                   Squirrel                       Нет дома               Free Folk Жен     27.0
+ 170                         Stafford Lannister                House Lannister               Westerman Муж     53.0
+ 175                               Stone Thumbs                       Нет дома               Free Folk Жен     27.0
+ 178                                      Sylas                  House Greyjoy              Неизвестно Жен     27.0
+ 192                                    Thistle                       Нет дома               Free Folk Жен     27.0
+ 201                                     Todric                       Нет дома              Неизвестно Муж     27.0
+ 204                             Tommard Heddle                   House Heddle              Неизвестно Муж     27.0
+ 207                                   Tothmure                       Нет дома              Неизвестно Муж     27.0
+ 209                                     Tregar                House Lannister              Неизвестно Жен     27.0
+ 214                          Tristifer IV Mudd                       Нет дома              Неизвестно Муж     27.0
+ 222                                Ulf the Ill                  House Greyjoy                Ironborn Жен     27.0
+ 234                            Uthor Underleaf                       Нет дома              Неизвестно Муж    100.0
+ 235                                        Utt               Brave Companions              Неизвестно Муж     27.0
+ 237                                      Varly                    House Stark                northmen Жен     27.0
+ 251               Walder Frey (son of Merrett)                     House Frey              Неизвестно Муж      9.0
+ 252                                     Wallen                  Night's Watch              Неизвестно Жен     27.0
+ 254                              Walys Flowers                       Нет дома                   Reach Муж     27.0
+ 262                                       Watt                  Night's Watch              Неизвестно Муж     27.0
+ 268                                    Rafford                  House Clegane              Неизвестно Муж     27.0
+ 273                           Tanda Stokeworth               House Stokeworth              Неизвестно Жен     27.0
+ 278                               Addam Osgrey                   House Osgrey              Неизвестно Муж     13.0
+ 280                Aegon Frey (son of Stevron)                     House Frey              Неизвестно Муж     50.0
+ 281                          Aegon I Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 282                         Aegon II Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 283                         Aegon IV Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 285                        Aegon III Targaryen                       Нет дома                Valyrian Муж     27.0
+ 286       Aegon Targaryen (son of Jaehaerys I)                House Targaryen                Valyrian Жен    100.0
+ 287           Aegon Targaryen (son of Aenys I)                House Targaryen                Valyrian Муж     17.0
+ 288           Aegon Targaryen (son of Rhaegar)                House Targaryen                Valyrian Муж      2.0
+ 290                          Aenys I Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 293                                      Aggar                  House Greyjoy              Неизвестно Муж     27.0
+ 295                          Aerys I Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 297                         Aerys II Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 298                                   Alebelly                    House Stark                Northmen Муж     27.0
+ 299                              Alequo Adarys                   Band of Nine                 Tyroshi Муж     27.0
+ 302                            All-for-Joffrey                       Нет дома              Неизвестно Муж     27.0
+ 305                          Alicent Hightower                House Hightower              Неизвестно Жен     45.0
+ 311                              Alyn Velaryon                 House Velaryon                Valyrian Муж     56.0
+ 312                            Alysanne Osgrey                   House Osgrey              Неизвестно Жен     21.0
+ 318                            Andrey Charlton                 House Charlton              Неизвестно Муж     27.0
+ 330        Baelon Targaryen (son of Viserys I)                House Targaryen                Valyrian Муж      0.0
+ 333        Baelor Targaryen (son of Daeron II)                House Targaryen              Неизвестно Муж     39.0
+ 335                                     Bannen                  Night's Watch              Неизвестно Муж     27.0
+ 351                                  Ben Bushy                    House Bushy              Неизвестно Жен     27.0
+ 386                              Brown Bernarr                  Night's Watch              Неизвестно Жен     27.0
+ 393                                 Byam Flint                  Night's Watch              Неизвестно Муж     27.0
+ 397                              Lord Cafferen                 House Cafferen              Неизвестно Муж     27.0
+ 407                               Cedric Payne                    House Payne              Неизвестно Муж     27.0
+ 411                              Catelyn Stark                    House Tully                Rivermen Жен     35.0
+ 413                                    Chiggen                       Нет дома              Неизвестно Муж     27.0
+ 422                                       Conn                    Stone Crows     Vale mountain clans Муж     27.0
+ 430 Daella Targaryen (daughter of Jaehaerys I)                House Targaryen                Valyrian Жен     28.0
+ 431    Daella Targaryen (daughter of Maekar I)                House Targaryen                Valyrian Муж    100.0
+ 432  Daenerys Targaryen (daughter of Aegon IV)                House Targaryen              Неизвестно Жен    100.0
+ 433                         Daeron I Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 434                            Daena Targaryen                House Targaryen                Valyrian Жен    100.0
+ 436        Daeron Targaryen (son of Viserys I)                House Targaryen              Неизвестно Муж     16.0
+ 438         Daeron Targaryen (son of Maekar I)                House Targaryen              Неизвестно Муж     31.0
+ 439                        Daeron II Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 443                     Damon Lannister (lord)                House Lannister               Westerman Муж     27.0
+ 449                                        Del                       Нет дома               Free Folk Жен     16.0
+ 457                               Dick Follard                  Night's Watch              Неизвестно Муж     27.0
+ 459                                     Dobber                       Нет дома              Неизвестно Муж     27.0
+ 462                           Donella Hornwood                 House Manderly                Northmen Жен     50.0
+ 467                              Dornish Dilly                  Night's Watch              Неизвестно Жен     27.0
+ 470                                    Drennan                  House Greyjoy                Ironborn Муж     27.0
+ 476                                Dykk Harlaw                   House Harlaw              Неизвестно Муж     27.0
+ 477                                       Easy                  Night's Watch              Неизвестно Муж     27.0
+ 478                           Duncan Targaryen                House Targaryen              Неизвестно Муж     39.0
+ 482                               Edwyn Osgrey                   House Osgrey              Неизвестно Муж     27.0
+ 488                           Elaena Targaryen                House Targaryen                Valyrian Жен     70.0
+ 491                                       Elza                House of Galare              Meereenese Жен     27.0
+ 512                                       Fogo                       Нет дома                Dothraki Муж     27.0
+ 515                                     Frenya                       Нет дома               Free Folk Муж     27.0
+ 529                           Garth of Oldtown                  Night's Watch              Неизвестно Жен     27.0
+ 532                                    Gelmarr                  House Greyjoy              Неизвестно Муж     27.0
+ 534                           Gerold Lannister                House Lannister               Westerman Муж     27.0
+ 537                              Gladden Wylde                    House Wylde              Неизвестно Муж     27.0
+ 538                            Glendon Flowers                       Нет дома              Неизвестно Муж    100.0
+ 544                                    Grazdan                       Нет дома                Astapori Муж     27.0
+ 568                                      Gynir                  House Greyjoy              Неизвестно Муж     27.0
+ 571                                       Hali                       Нет дома               Free Folk Жен     27.0
+ 574                          Hamish the Harper                       Нет дома              Неизвестно Жен     27.0
+ 575                             Halys Hornwood                 House Hornwood                Northmen Муж     27.0
+ 576                                    Harghaz                       Нет дома                Ghiscari Муж     27.0
+ 578                           Harlan Grandison                House Grandison              Неизвестно Муж     27.0
+ 585                                      Harra                    House Whent              Неизвестно Жен     27.0
+ 586                               Harrag Sharp                    House Sharp                Ironborn Жен     27.0
+ 589                              Harren Botley                   House Botley                Ironborn Жен     27.0
+ 592                                    Harsley                       Нет дома              Неизвестно Муж     27.0
+ 597                          Helicent Uffering                 House Uffering              Неизвестно Жен    100.0
+ 604                             Hendry Bracken                  House Bracken              Неизвестно Жен     27.0
+ 605                                     Heward                    House Stark                northmen Жен     27.0
+ 618      Jaehaerys Targaryen (son of Aegon II)                House Targaryen              Неизвестно Муж      6.0
+ 619                         Jaehaera Targaryen                House Targaryen                Valyrian Жен     10.0
+ 621                     Jaehaerys II Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 623                      Jaehaerys I Targaryen                       Нет дома              Неизвестно Муж     27.0
+ 624                                       Jate                       Нет дома              Неизвестно Жен     27.0
+ 635        Jeyne Westerling (wife of Maegor I)               House Westerling              Неизвестно Жен     20.0
+ 636                               Jeyne Waters                       Нет дома                Westeros Муж    100.0
+ 641                           Joanna Lannister                House Lannister               Westerman Жен     28.0
+ 652                       Jon Umber (Smalljon)                    House Umber                Northmen Муж     27.0
+ 654                                 Jon Waters                       Нет дома              Неизвестно Муж    100.0
+ 666                                       Jyck                House Lannister              Неизвестно Муж     27.0
+ 671                                     Kenned                       Нет дома                Ironborn Жен     27.0
+ 676                                       Koss                       Нет дома              Неизвестно Муж     27.0
+ 677                                      Kromm                  House Greyjoy                ironborn Жен     27.0
+ 678                                       Kurz                       Нет дома              Неизвестно Муж     27.0
+ 680                         Kyle (brotherhood)    Brotherhood without banners              Неизвестно Жен     27.0
+ 693                            Lem (Standfast)                   House Osgrey              Неизвестно Жен    100.0
+ 711                                    Lorimer                  House Lefford              Неизвестно Муж     27.0
+ 712                                     Lorren                       Нет дома              Неизвестно Муж     27.0
+ 716                                      Lucan                    House Whent              Неизвестно Муж     27.0
+ 720                                Lucas Roote                    House Roote              Неизвестно Муж     27.0
+ 728                                      Luton                   House Bolton                Northmen Муж     27.0
+ 734                             Lyonel Bentley                    Queensguard              Неизвестно Жен     27.0
+ 735                       Lyonel Tyrell (lord)                   House Tyrell                   Reach Муж     27.0
+ 740                             Maerie (Whore)                       Нет дома              Неизвестно Жен     27.0
+ 755                               Marq Grafton                  House Grafton              Неизвестно Муж     27.0
+ 757                                     Maslyn                  Night's Watch              Неизвестно Жен     27.0
+ 777                                       Mero                    Second Sons                Braavosi Муж     27.0
+ 788                                     Morrec                House Lannister              Неизвестно Муж     27.0
+ 791            Mors Martell (brother of Doran)                  House Martell              Неизвестно Муж      0.0
+ 800                             Myles (squire)                    House Tully              Неизвестно Муж     27.0
+ 801                                     Myrtle                       Нет дома               Free Folk Жен     27.0
+ 818                                        Ogo                       Нет дома                Dothraki Муж     27.0
+ 822                                  Old Henly                  Night's Watch              Неизвестно Муж     79.0
+ 823                            Olyvar Oakheart                 House Oakheart              Неизвестно Муж     27.0
+ 827                                      Orell                       Нет дома               Free Folk Муж     27.0
+ 828                            Ormond (knight)                       Нет дома              Неизвестно Жен     27.0
+ 836                                      Othor                  Night's Watch              Неизвестно Муж     27.0
+ 846                         Pate (Pinchbottom)                       Нет дома              Неизвестно Жен     27.0
+ 849                           Pate (Standfast)                   House Osgrey              Неизвестно Муж    100.0
+ 861                               Poul Pemford                  House Pemford              Неизвестно Муж     27.0
+ 862                                   Poxy Tym                    House Stark                northmen Муж     27.0
+ 863                                      Praed                       Нет дома              Неизвестно Муж     27.0
+ 875                                      Quaro                       Нет дома                Dothraki Жен     27.0
+ 880                              Aladale Wynch                    House Wynch                Ironborn Муж     27.0
+ 887                            Allard Seaworth                 House Seaworth              Неизвестно Муж     27.0
+ 888                                 Allar Deem   City Watch of King's Landing              Неизвестно Муж     27.0
+ 890                              Alyn Cockshaw                 House Cockshaw              Неизвестно Муж     27.0
+ 901                           Alyssa Blackwood                House Blackwood              Неизвестно Жен     27.0
+ 903                           Amarei Crakehall                House Crakehall              Неизвестно Жен     19.0
+ 904                         Ambrose Butterwell               House Butterwell              Неизвестно Муж    100.0
+ 906                                Andros Brax                     House Brax              Неизвестно Муж     27.0
+ 922                               Balman Byrch                    House Byrch              Неизвестно Муж     27.0
+ 923                                      Barth             Faith of the Seven              Неизвестно Муж     27.0
+ 931                               Benfrey Frey                     House Frey              Неизвестно Муж     28.0
+ 938                              Bethany Rosby                    House Rosby              Неизвестно Жен     17.0
+ 945                             Bryan Fossoway   House Fossoway of Cider Hall              Неизвестно Муж     27.0
+ 947                              Bryen Farring                  House Farring              Неизвестно Муж     27.0
+ 948                                Bryen Caron                    House Caron              Неизвестно Муж     27.0
+ 949                           Burton Crakehall                House Crakehall              Неизвестно Муж     27.0
+ 950                             Craghas Drahar Kingdom of the Three Daughters                  Myrish Муж     27.0
+ 953                                       Cayn                    House Stark                Northmen Муж     27.0
+ 956                                     Chayle                       Нет дома              Неизвестно Муж     27.0
+ 957                          Clarent Crakehall                House Crakehall              Неизвестно Жен     27.0
+ 960                                Cley Cerwyn                   House Cerwyn                Northmen Муж     15.0
+ 961                              Clubfoot Karl                  Night's Watch              Неизвестно Муж     27.0
+ 968                               Cregan Stark                    House Stark                Northmen Муж     27.0
+ 969                              Cyrenna Swann                    House Swann              Неизвестно Жен     13.0
+ 975                                  Dalbridge                  Night's Watch              Неизвестно Муж     45.0
+ 980                                     Dareon                  Night's Watch              Неизвестно Муж     27.0
+ 982                             Daryn Hornwood                 House Hornwood                Northmen Муж     27.0
+ 987                                       Delp                    House Tully              Неизвестно Жен     27.0
+ 990                                Denys Arryn                    House Arryn              Неизвестно Жен     27.0
+ 992                                    Desmond                    House Stark              Неизвестно Жен     27.0
+ 997                                       Dirk                  Night's Watch              Неизвестно Муж     27.0
+1001                               Donnel Locke                    House Locke              Неизвестно Жен     27.0
+1004                                    Dormund                       Нет дома               Free Folk Муж     27.0
+1006                                      Ebben                  Night's Watch              Неизвестно Муж     27.0
+1011                             Edwyd Fossoway   House Fossoway of Cider Hall              Неизвестно Муж     27.0
+1015                               Elbert Arryn                    House Arryn              Неизвестно Муж     27.0
+1021                                     Elwood                    House Tully              Неизвестно Жен     27.0
+1026                               Endrew Tarth                    House Tarth              Неизвестно Муж     27.0
+1027                                      Eroeh                       Нет дома               Lhazareen Жен     27.0
+1028                                 Eon Hunter                   House Hunter              Неизвестно Муж     27.0
+1043                         Garth of Greenaway                  Night's Watch              Неизвестно Муж     27.0
+1048                          Garth Greyfeather                  Night's Watch              Неизвестно Муж     27.0
+1049                                Gawen Swann                    House Swann              Неизвестно Муж    100.0
+1051                                Gawen Wylde                    House Wylde              Неизвестно Муж     27.0
+1057                                   Gerardys                         Blacks              Неизвестно Муж     27.0
+1063                               Gormon Peake                    House Peake              Неизвестно Муж     27.0
+1067                          Grazdan mo Ullhor                   Good Masters                Astapori Муж     27.0
+1069                                     Grubbs                  Night's Watch              Неизвестно Жен     27.0
+1071                            Guncer Sunglass                 House Sunglass              Неизвестно Муж     27.0
+1076                           Gwayne Hightower                House Hightower              Неизвестно Муж     42.0
+1077                                  Hairy Hal                  Night's Watch              Неизвестно Жен     27.0
+1078                                       Hake                  Night's Watch              Неизвестно Муж     27.0
+1084                              Harlen Tyrell                   House Tyrell                   Reach Муж     27.0
+1087                         Harrold Westerling               House Westerling               Westermen Муж     27.0
+1088                               Harwood Fell                     House Fell              Неизвестно Муж     27.0
+1089                              Harwin Strong                   House Strong              Неизвестно Муж     30.0
+1092                            Helman Tallhart                 House Tallhart                Northmen Муж     27.0
+1099                             Hubard Rambton                  House Rambton              Неизвестно Муж     27.0
+1105                                     Hullen                    House Stark                Northmen Муж     27.0
+1106                           Humfrey Beesbury                 House Beesbury              Неизвестно Муж     27.0
+1107                            Humfrey Hardyng                  House Hardyng              Неизвестно Муж     27.0
+1115                              Jaremy Rykker                  Night's Watch              Неизвестно Муж     27.0
+1116                                       Jarl                       Нет дома               Free Folk Муж     27.0
+1117                            Jason Lannister                House Lannister              Неизвестно Муж     27.0
+1121                                Jeyne Arryn                    House Arryn                    Vale Жен     27.0
+1127                           Joffrey Lonmouth                 House Lonmouth              Неизвестно Муж     15.0
+1128                            Joffrey Caswell                  House Caswell              Неизвестно Муж    100.0
+1140                             Jonothor Darry                    House Darry              Неизвестно Муж     27.0
+1145                                      Kaeth                       Нет дома              Неизвестно Муж     82.0
+1151                                       Kyra                    House Stark              Неизвестно Муж     20.0
+1154                                       Lark                  Night's Watch               Sistermen Муж     27.0
+1160                                Leo Lefford                  House Lefford              Неизвестно Муж     27.0
+1170                            Lorent Marbrand                 House Marbrand               Westerman Муж     27.0
+1172                             Lothar Mallery                  House Mallery              Неизвестно Жен     27.0
+1182                             Lyman Beesbury                 House Beesbury              Неизвестно Муж     81.0
+1184                                Lyman Darry                    House Darry              Неизвестно Жен      9.0
+1190                                 Cleos Frey                     House Frey              Неизвестно Муж     41.0
+1191                             Dontos Hollard                  House Hollard              Неизвестно Муж     39.0
+1192                                    Craster                       Нет дома               Free Folk Муж     27.0
+1193                              Dale Seaworth                 House Seaworth              Неизвестно Муж     27.0
+1199                              Lyonel Strong                   House Strong              Неизвестно Муж     27.0
+1203                             Mallador Locke                  Night's Watch              Неизвестно Муж     27.0
+1207                             Maric Seaworth                 House Seaworth              Неизвестно Муж     27.0
+1215                          Matarys Targaryen                House Targaryen              Неизвестно Муж     25.0
+1221                                     Mawney                  Night's Watch              Неизвестно Муж     27.0
+1222                               Medgar Tully                    House Tully                Rivermen Муж     27.0
+1223                              Medger Cerwyn                   House Cerwyn                Northmen Муж     27.0
+1240                           Monford Velaryon                 House Velaryon                Valyrian Муж     27.0
+1247                             Muttering Bill                  Night's Watch              Неизвестно Муж     27.0
+1249                                   Murmison             Faith of the Seven              Неизвестно Муж     27.0
+1252                               Myles Mooton                   House Mooton              Неизвестно Муж     27.0
+1263                               Ollo Lophand                  Night's Watch                 Tyroshi Муж     27.0
+1268                             Orbert Caswell                  House Caswell              Неизвестно Муж     27.0
+1269                                    Ordello                       Нет дома                Pentoshi Жен     27.0
+1273                                 Orphan Oss                  Night's Watch              Неизвестно Жен     27.0
+1277                              Ossifer Plumm                    House Plumm              Неизвестно Муж     27.0
+1279                              Ottyn Wythers                  House Wythers              Неизвестно Жен     69.0
+1280                                Owen Norrey                   House Norrey Northern mountain clans Жен     27.0
+1281                      Pate of the Blue Fork                     House Frey              Неизвестно Муж     27.0
+1291                           Qarlton Chelsted                 House Chelsted              Неизвестно Муж     27.0
+1292                     Lord Commander Qorgyle                  House Qorgyle              Неизвестно Муж     27.0
+1296                               Quentyn Ball                     House Ball              Неизвестно Муж     27.0
+1300                               Ralf Kenning        House Kenning of Harlaw                Ironborn Муж     27.0
+1301                            Raymun Redbeard                       Нет дома               free folk Муж     27.0
+1303                         Raynald Westerling               House Westerling              Неизвестно Муж     27.0
+1304                   Red Alyn of the Rosewood                  Night's Watch              Неизвестно Муж     27.0
+1310                                 Rhea Royce                    House Royce              Неизвестно Жен     27.0
+1315                             Rickard Thorne                   House Thorne              Неизвестно Муж     27.0
+1319                                Robert Brax                     House Brax              Неизвестно Жен     27.0
+1321                                Robin Flint   House Flint of Widow's Watch              Неизвестно Жен     27.0
+1339                                Rupert Brax                     House Brax              Неизвестно Муж     27.0
+1341                               Ryam Redwyne                  House Redwyne              Неизвестно Муж     27.0
+1348                            Saera Targaryen                House Targaryen                Valyrian Муж    100.0
+1353                              Sawane Botley                   House Botley                Ironborn Муж     27.0
+1361                               Shella Whent                    House Whent                Rivermen Жен     27.0
+1367                              Lord Staunton                 House Staunton              Неизвестно Муж     27.0
+1372                            Steffon Darklyn                  House Darklyn              Неизвестно Жен     27.0
+1382                                Symond Frey                     House Frey              Неизвестно Муж     48.0
+1388                             Terrence Toyne                    House Toyne              Неизвестно Муж     27.0
+1395                                  Tion Frey                       Нет дома              Неизвестно Муж     20.0
+1397                                     Tomard                    House Stark                northmen Муж     49.0
+1401                                    Torwynd                       Нет дома               Free Folk Муж     27.0
+1410                           Tybolt Lannister                House Lannister               Westerman Муж     27.0
+1413                            Tyrek Lannister                House Lannister              Неизвестно Муж     13.0
+1416                                 Tytos Frey                     House Frey              Неизвестно Муж     38.0
+1423                           Vaemond Velaryon                 House Velaryon                Valyrian Муж     27.0
+1425                                Vayon Poole                    House Poole              Неизвестно Муж     27.0
+1426                             Vickon Greyjoy                  House Greyjoy              Неизвестно Жен     27.0
+1427                              Viserys Plumm                    House Plumm              Неизвестно Жен    100.0
+1445                               Willam Wells                    House Wells                 Dornish Муж     27.0
+1446                               Willem Darry                    House Darry              Неизвестно Муж     27.0
+1448                           Willem Lannister                House Lannister              Неизвестно Муж     14.0
+1450                               Willam Stark                    House Stark                Northmen Муж     27.0
+1459                               Aegor Rivers                  House Bracken              Неизвестно Муж     69.0
+1460                                 Aenys Frey                     House Frey              Неизвестно Муж     60.0
+1461                           Aerion Targaryen                House Targaryen                Valyrian Муж     41.0
+1462                           Aemond Targaryen                House Targaryen                Valyrian Муж     20.0
+1471                           Benfred Tallhart                 House Tallhart                Northmen Муж     18.0
+1477                                Bryce Caron                    House Caron              Неизвестно Муж     27.0
+1479                          Cassana Estermont                House Estermont              Неизвестно Муж     27.0
+1480                                      Chett                  Night's Watch              Неизвестно Муж     27.0
+1483                                   Chiswyck                  House Clegane              Неизвестно Жен     27.0
+1484                                      Cleon                       Нет дома                Astapori Муж     27.0
+1485                                    Cohollo                           Khal                Dothraki Муж     27.0
+1486                            Cortnay Penrose                  House Penrose              Неизвестно Муж     27.0
+1488                                    Cragorn                  House Greyjoy              Неизвестно Муж     27.0
+1491                                    Cressen                       Нет дома              Неизвестно Муж     80.0
+1496                                      Dalla                       Нет дома               Free Folk Жен     27.0
+1504                               Ethan Glover                   House Glover                Northmen Муж     27.0
+1507                           Gerold Hightower                House Hightower              Неизвестно Муж     27.0
+1513                                Gyles Rosby                    House Rosby              Неизвестно Муж     27.0
+1514                               Harren Hoare                       Нет дома                Ironborn Муж     27.0
+1517                          Helaena Targaryen                House Targaryen              Неизвестно Жен     21.0
+1520                                       Iggo               Brave Companions                Dothraki Муж     27.0
+1523                                Janos Slynt                  Night's Watch              Неизвестно Муж     22.0
+1524                                 Jared Frey                     House Frey              Неизвестно Муж     52.0
+1525                               Jasper Wylde                    House Wylde              Неизвестно Муж     27.0
+1527                             Jeyne Lothston                 House Lothston              Неизвестно Жен    100.0
+1530                                Jory Cassel                   House Cassel                Northmen Муж     27.0
+1533                                     Khrazz                 House of Loraq                Ghiscari Муж     23.0
+1534                                   Kurleket                  House Bracken              Неизвестно Муж     27.0
+1539                            Lucas Inchfield                House Inchfield              Неизвестно Муж     27.0
+1541                               Lyanna Stark                    House Stark                Northmen Муж     17.0
+1543                            Lucas Blackwood                House Blackwood              Неизвестно Муж     27.0
+1547                        Mag Mar Tun Doh Weg                       Нет дома              Неизвестно Муж     27.0
+1548                               Mandon Moore                    House Moore                 Valemen Муж     27.0
+1551                                  Marillion                       Нет дома              Неизвестно Муж     21.0
+1554                               Masha Heddle                       Нет дома              Неизвестно Жен     27.0
+1555                           Matthos Seaworth                 House Seaworth              Неизвестно Муж     27.0
+1557                         Melara Hetherspoon              House Hetherspoon              Неизвестно Жен     12.0
+1558                          Melissa Blackwood                House Blackwood              Неизвестно Жен    100.0
+1562                               Merrett Frey                     House Frey              Riverlands Муж     38.0
+1563                                      Mohor                  House Bracken              Неизвестно Муж     27.0
+1569                                    Mordane                    House Stark              Неизвестно Жен     27.0
+1579                             Oberyn Martell                  House Martell              Dornishmen Муж     43.0
+1587                             Orys Baratheon                House Baratheon              Неизвестно Муж     27.0
+1590                               Oswell Whent                    House Whent                Rivermen Муж     27.0
+1591                             Otto Hightower                House Hightower              Неизвестно Муж     27.0
+1595                                 Petyr Frey                     House Frey              Неизвестно Муж     19.0
+1598                         Preston Greenfield               House Greenfield               Westermen Муж     27.0
+1599                                   Polliver                  House Clegane              Неизвестно Муж     27.0
+1602                                    Pycelle                House Lannister              Неизвестно Муж     84.0
+1603                            Qhorin Halfhand                  Night's Watch              Неизвестно Муж     27.0
+1604                                      Qotho                       Нет дома                Dothraki Муж     27.0
+1605                            Quentyn Martell                  House Martell              Dornishmen Муж     19.0
+1610                               Raymun Darry                    House Darry              Неизвестно Муж     27.0
+1612                                 Small Paul                  Night's Watch              Неизвестно Муж     27.0
+1614                                       Styr                          Thenn               Free Folk Муж     27.0
+1616                          Prendahl na Ghezn                     Stormcrows                Ghiscari Муж     27.0
+1618                              Oznak zo Pahl                  House of Pahl                 Meereen Муж     27.0
+1619                            Aegon Blackfyre                House Blackfyre                Valyrian Муж     12.0
+1620                             Addam Velaryon                 House Velaryon                Valyrian Муж     16.0
+1621                          Aegon V Targaryen                       Нет дома              Неизвестно Муж     27.0
+1622                            Aemon Blackfyre                House Blackfyre                Valyrian Муж     12.0
+1624                                      Alfyn                       Нет дома               Free Folk Муж     27.0
+1627                                       Alyn                    House Stark              Неизвестно Муж     27.0
+1629                            Alester Florent                  House Florent              Неизвестно Муж     27.0
+1634                                Amory Lorch                    House Lorch              Неизвестно Муж     27.0
+1636                         Arlan of Pennytree                       Нет дома              Неизвестно Муж     60.0
+1639                               Arthur Dayne                    House Dayne              Dornishmen Муж     27.0
+1640                              Arys Oakheart                 House Oakheart                   Reach Муж     27.0
+1641                               Ashara Dayne                    House Dayne              Неизвестно Жен     27.0
+1642                              Aron Santagar                 House Santagar                 Dornish Муж     27.0
+1646                           Baelor Blacktyde                House Blacktyde                Ironborn Муж     27.0
+1647                              Balon Greyjoy                       Нет дома              Неизвестно Муж     27.0
+1649                         Baelor I Targaryen                       Нет дома              Неизвестно Муж     27.0
+1651                              Barba Bracken                  House Bracken              Неизвестно Жен    100.0
+1658                            Bethany Bracken                  House Bracken              Неизвестно Жен     22.0
+1659                           Beric Dondarrion                       Нет дома              Неизвестно Муж     23.0
+1660                                      Biter               Brave Companions              Неизвестно Муж     27.0
+1666                             Brynden Rivers                House Targaryen                Valyrian Муж     77.0
+1672                            Cletus Yronwood                 House Yronwood              Неизвестно Муж     27.0
+1674                            Corlys Velaryon                 House Velaryon                Valyrian Муж     79.0
+1675                               Criston Cole                     House Cole              Stormlands Муж     48.0
+1676                         Daemon I Blackfyre                House Blackfyre                Valyrian Муж     26.0
+1677                           Daemon Targaryen                House Targaryen                Valyrian Муж     49.0
+1681                                 Dick Crabb                    House Crabb              Неизвестно Муж     27.0
+1682                                 Donal Noye                House Baratheon              Неизвестно Муж     56.0
+1683                             Domeric Bolton                   House Bolton                Northmen Муж     18.0
+1685                                     Doreah                House Targaryen                  Lysene Жен     27.0
+1688                            Eddard Karstark                 House Karstark                Northmen Муж     27.0
+1689                               Eddard Stark                    House Stark                Northmen Муж     36.0
+1692                               Elia Martell                       Нет дома              Неизвестно Жен     27.0
+1693                                  Emmon Cuy                      House Cuy              Неизвестно Муж     27.0
+1695                          Falena Stokeworth               House Stokeworth              Неизвестно Муж    100.0
+1698                                     Farlen                    House Stark              Неизвестно Муж     27.0
+1699                          Falyse Stokeworth               House Stokeworth              Неизвестно Жен     35.0
+1703                                      Gared                  Night's Watch              Неизвестно Муж     66.0
+1706                           Gerion Lannister                House Lannister              Неизвестно Муж     36.0
+1707                               Gevin Harlaw                   House Harlaw                Ironborn Жен     27.0
+1714                                     Groleo                House Targaryen                Pentoshi Жен     27.0
+1716                             Gregor Clegane                  House Clegane              Неизвестно Муж     35.0
+1718                            Guyard Morrigen                 House Morrigen              Неизвестно Муж     21.0
+1720                                      Haggo                       Нет дома                Dothraki Муж     27.0
+1721                                     Hazzea                       Нет дома                Ghiscari Жен      5.0
+1723                                      Harma                       Нет дома               Wildlings Жен     27.0
+1731                                      Holly                       Нет дома               Free Folk Муж     17.0
+1732                                       Hugh                    House Arryn                 Valemen Муж     27.0
+1734                               Hoster Tully                    House Tully                Rivermen Муж     62.0
+1739                               Imry Florent                  House Florent              Неизвестно Муж     27.0
+1741                            Jacelyn Bywater                  House Bywater              Неизвестно Муж     27.0
+1745                                  Jon Arryn                    House Arryn                 Valemen Муж     81.0
+1749                                      Kedry                       Нет дома              Неизвестно Муж     27.0
+1752                            Kevan Lannister                House Lannister              Неизвестно Муж     56.0
+1754                                     Lharys                  House Bracken              Неизвестно Муж     27.0
+1756                               Larys Strong                   House Strong              Неизвестно Муж    100.0
+1758                              Lewyn Martell                  House Martell                 Dornish Муж     27.0
+1761                                 Lysa Arryn                    House Tully              Неизвестно Жен     34.0
+1766                               Mark Ryswell                  House Ryswell                Northmen Жен     27.0
+1768                              Maron Greyjoy                  House Greyjoy                Ironborn Муж     14.0
+1769                              Martyn Cassel                   House Cassel                Northmen Жен     27.0
+1773                             Mirri Maz Duur                       Нет дома               Lhazareen Жен     42.0
+1774                                     Mikken                    House Stark                Northmen Муж     27.0
+1777                                    Nettles                         Blacks              Неизвестно Жен    100.0
+1780                              Ulf the White                         Blacks              Неизвестно Муж     27.0
+1785                            Renly Baratheon                House Baratheon              Stormlands Муж     22.0
+1790                                    Varamyr                       Нет дома               Free Folk Муж     27.0
+1794                                 Vargo Hoat               Brave Companions                   Qohor Муж     27.0
+1798                          Rhaella Targaryen                House Targaryen                Valyrian Муж     39.0
+1799                            Tywin Lannister                House Lannister              Неизвестно Муж     58.0
+1802                                Yellow Dick                   House Bolton                Westeros Муж     27.0
+1803                                      Yoren                  Night's Watch                Westeros Жен     27.0
+1807                                  Theo Wull                     House Wull Northern mountain clans Муж     27.0
+1810                            Wendel Manderly                 House Manderly              Неизвестно Муж     45.0
+1811                                Simon Toyne                    House Toyne              Неизвестно Жен     27.0
+1812                          Steffon Baratheon                House Baratheon              Неизвестно Муж     32.0
+1813                                   Shagwell               Brave Companions              Неизвестно Муж     27.0
+1814                           Rickard Karstark                 House Karstark                Northmen Муж     27.0
+1815                                    Senelle                House Lannister              Неизвестно Муж     27.0
+1816                             Shiera Seastar                House Targaryen                Westeros Жен    100.0
+1820                                Syrio Forel                    House Stark                Braavosi Жен     27.0
+1821                              Rodrik Cassel                   House Cassel                Northmen Муж     27.0
+1822                               Stevron Frey                     House Frey              Неизвестно Муж     66.0
+1826                                      Rorge               Brave Companions              Неизвестно Муж     27.0
+1827                              Rickard Stark                    House Stark                Northmen Муж     52.0
+1828                          Visenya Targaryen                House Targaryen                Valyrian Жен     72.0
+1830                          Viserys Targaryen                House Targaryen                Valyrian Муж     22.0
+1835                                     Timeon               Brave Companions                 Dornish Муж     27.0
+1837                                       Shae                       Нет дома              Неизвестно Жен     20.0
+1840                             Rodrik Greyjoy                  House Greyjoy                Ironborn Муж     15.0
+1845                              Willam Dustin                   House Dustin                Northmen Муж     27.0
+1846                           Torrhen Karstark                 House Karstark                Northmen Муж     27.0
+1848                                    Ygritte                   Mance Rayder                Wildling Муж     19.0
+1849                           Tyland Lannister                House Lannister              Неизвестно Муж     27.0
+1850                           Thoren Smallwood                  Night's Watch              Неизвестно Муж     27.0
+1854                             Sandor Clegane                  House Clegane              Неизвестно Муж     30.0
+1855                            Ulf son of Umar                  Moon Brothers     Vale mountain clans Муж     27.0
+1859                          Kraznys mo Nakloz                   Good Masters                 Astapor Муж     27.0
+1860                              Dacey Mormont                  House Mormont                Northmen Жен     47.0
+1862                           Lyonel Baratheon                House Baratheon              Неизвестно Муж     27.0
+1864                                Vardis Egen                     House Egen                 Valemen Муж     49.0
+1868                               Jeor Mormont                  House Mormont                Northmen Муж     69.0
+1869                                     Rhaego                House Targaryen              Неизвестно Жен     27.0
+1872                               Rhaegar Frey                     House Frey              Неизвестно Муж     31.0
+1875                                      Weese                    House Whent              Неизвестно Муж     27.0
+1879                                Robar Royce                    House Royce                 Valemen Муж     22.0
+1881                             Rhae Targaryen                House Targaryen                Valyrian Жен    100.0
+1882                                 Ryman Frey                     House Frey              Неизвестно Муж     54.0
+1887                                        Pyg               Brave Companions              Неизвестно Жен     27.0
+1898                           Maelor Targaryen                House Targaryen              Неизвестно Муж      3.0
+1901                         Alysanne Targaryen                       Нет дома              Неизвестно Жен     27.0
+1902                            Baela Targaryen                House Targaryen                Valyrian Жен    100.0
+1903                              Brandon Stark                    House Stark                Northmen Муж     20.0
+1906                              Jafer Flowers                  Night's Watch              Неизвестно Муж     27.0
+1908                                      Mycah                       Нет дома                Westeros Муж     13.0
+1910                                    Rossart              Alchemists' Guild              Неизвестно Муж     27.0
+1912                               Waymar Royce                    House Royce                 Valemen Муж     19.0
+1913                                       Stiv                  Night's Watch               Wildlings Жен     27.0
+1914                        Daemon II Blackfyre                House Blackfyre              Неизвестно Муж     23.0
+1916                                Hugh Hammer                         Blacks              Неизвестно Муж     27.0
+1919                          Rhaegar Targaryen                House Targaryen                Valyrian Муж     24.0
+1920                                      Drogo                       Нет дома                Dothraki Жен     32.0
+1922                                      Barra                House Baratheon              Неизвестно Муж      1.0
+1930                            Stalwart Shield                      Unsullied              Неизвестно Жен     27.0
+1935                             Rohanne Webber                   House Webber              Неизвестно Жен    100.0
+1938                        Symon Silver Tongue                       Нет дома              Неизвестно Муж     27.0
+1941                             Laena Velaryon                 House Velaryon                Valyrian Жен     27.0
+1942                                      Luwin                    House Stark                Westeros Муж     27.0
+1943                                       Reek                   House Bolton              Неизвестно Муж     27.0
+1946                            Tytos Lannister                House Lannister              Неизвестно Муж     47.0
