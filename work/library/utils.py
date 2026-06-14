@@ -34,9 +34,11 @@ def load_settings(ini_path):
         config.read(ini_path, encoding="utf-8")
         for key in defaults:
             if key == "font_size":
-                defaults[key] = config.getint("Theme", key, fallback=defaults[key])
+                defaults[key] = (
+                    config.getint("Theme", key, fallback=defaults[key]))
             else:
-                defaults[key] = config.get("Theme", key, fallback=defaults[key])
+                defaults[key] = (
+                    config.get("Theme", key, fallback=defaults[key]))
     return defaults
 
 
@@ -107,11 +109,16 @@ def expand_battles_data(df_battles, target_count=100):
     Увеличивает количество записей о битвах до target_count путём размножения.
 
     Описание:
-        Увеличивает количество записей о битвах до target_count путём размножения.
-        Копиям меняется id, название (добавляется суффикс), год сдвигается на случайное число.
+        Увеличивает количество записей
+        о битвах до target_count путём размножения.
+        Копиям меняется id,
+        название (добавляется суффикс),
+        год сдвигается на случайное число.
     Входные параметры:
-        df_battles (pd.DataFrame) - исходный DataFrame с битвами.
-        target_count (int) - желаемое минимальное количество записей.
+        df_battles (pd.DataFrame)
+        - исходный DataFrame с битвами.
+        target_count (int)
+         - желаемое минимальное количество записей.
     Возвращаемый объект:
         pd.DataFrame - расширенный DataFrame.
     """
@@ -138,13 +145,15 @@ def expand_battles_data(df_battles, target_count=100):
             new_rows.append(pd.DataFrame([new_row]))
 
     if new_rows:
-        expanded = pd.concat([expanded] + new_rows, ignore_index=True)
+        expanded = pd.concat([expanded] + new_rows,
+                             ignore_index=True)
 
     while len(expanded) < target_count:
         last_row = expanded.iloc[-1].to_dict()
         last_row['id'] = expanded['id'].max() + 1
         last_row['название'] = last_row['название'] + " (доп)"
-        expanded = pd.concat([expanded, pd.DataFrame([last_row])], ignore_index=True)
+        expanded = pd.concat([expanded, pd.DataFrame([last_row])],
+                             ignore_index=True)
 
     return expanded
 
@@ -154,7 +163,8 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
     Создаёт DataFrame персонажей и сражений из исходных CSV-файлов.
 
     Описание:
-        Создаёт DataFrame персонажей и сражений из исходных CSV-файлов, размножает битвы.
+        Создаёт DataFrame персонажей и
+        сражений из исходных CSV-файлов, размножает битвы.
     Входные параметры:
         battles_csv (str) - путь к battles.csv.
         characters_csv (str) - путь к character-predictions.csv.
@@ -164,27 +174,33 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
     """
     # Обработка датасета и создание справочника персонажей
     data_char_pred = pd.read_csv(characters_csv)
-    char = data_char_pred[["name", "house", "culture", "male", "age", "isAlive"]].copy()
+    char = data_char_pred[["name", "house", "culture",
+                           "male", "age", "isAlive"]].copy()
     char["male"] = char["male"].map({1: "Муж", 0: "Жен"})
     char["isAlive"] = char["isAlive"].map({1: "Жив", 0: "Мертв"})
     char["house"] = char["house"].fillna("Нет дома")
     char["culture"] = char["culture"].fillna("Неизвестно")
     median_age = char["age"].median()
     char["age"] = char["age"].fillna(median_age)
-    char["age"] = char["age"].apply(lambda x: int(x) if x >= 0 else median_age)
+    char["age"] = char["age"].apply(lambda x:
+                                    int(x) if x >= 0 else median_age)
     char.insert(0, "id", range(1, len(char)+1))
-    char.columns = ["id", "имя", "дом", "культура", "пол", "возраст", "жив/мертв"]
+    char.columns = ["id", "имя", "дом",
+                    "культура", "пол", "возраст", "жив/мертв"]
 
     # Обработка датасета и создание справочника сражений
     data_battles = pd.read_csv(battles_csv)
-    batt = data_battles[["name", "region", "attacker_king", "defender_king", "attacker_outcome", "year"]].copy()
-    batt["winner"] = np.where(batt["attacker_outcome"] == "win", batt["attacker_king"], batt["defender_king"])
+    batt = data_battles[["name", "region", "attacker_king",
+                         "defender_king", "attacker_outcome", "year"]].copy()
+    batt["winner"] = np.where(batt["attacker_outcome"] == "win",
+                              batt["attacker_king"], batt["defender_king"])
     batt = batt.drop(columns=["attacker_outcome"])
     batt["attacker_king"] = batt["attacker_king"].fillna("Неизвестный лидер")
     batt["defender_king"] = batt["defender_king"].fillna("Неизвестный лидер")
     batt["winner"] = batt["winner"].fillna("Ничья")
     batt.insert(0, "id", range(1, len(batt)+1))
-    batt.columns = ["id", "название", "регион", "атакующая сторона", "обороняющая сторона", "год", "победитель"]
+    batt.columns = ["id", "название", "регион", "атакующая сторона",
+                    "обороняющая сторона", "год", "победитель"]
     batt = expand_battles_data(batt, target_battles)
     return char, batt
 
@@ -195,7 +211,8 @@ def init_dataframes(battles_csv, characters_csv, data_dir, target_battles=100):
 
     Описание:
         Инициализирует DataFrame, используя кэш в папке data.
-        Если кэш существует, загружает из него, иначе создаёт из CSV и сохраняет.
+        Если кэш существует,
+        загружает из него, иначе создаёт из CSV и сохраняет.
     Входные параметры:
         battles_csv (str) - путь к battles.csv.
         characters_csv (str) - путь к character-predictions.csv.
@@ -207,6 +224,8 @@ def init_dataframes(battles_csv, characters_csv, data_dir, target_battles=100):
     df_char, df_batt = load_dataframes_pickle(data_dir)
     if df_char is None or df_batt is None:
         os.makedirs(data_dir, exist_ok=True)
-        df_char, df_batt = create_initial_data(battles_csv, characters_csv, target_battles)
+        df_char, df_batt = create_initial_data(battles_csv,
+                                               characters_csv,
+                                               target_battles)
         save_dataframes_pickle(df_char, df_batt, data_dir)
     return df_char, df_batt

@@ -7,7 +7,8 @@ import os
 import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
-from work.library.utils import load_settings, init_dataframes, save_dataframes_pickle
+from work.library.utils import (load_settings, init_dataframes,
+                                save_dataframes_pickle)
 from gui import (
     create_characters_tab, create_battles_tab,
     add_character, edit_character, delete_character,
@@ -59,7 +60,8 @@ def main():
     except Exception as e:
         root_err = tk.Tk()
         root_err.withdraw()
-        messagebox.showerror("Критическая ошибка", f"Не удалось загрузить данные:\n{e}")
+        messagebox.showerror("Критическая ошибка",
+                             f"Не удалось загрузить данные:\n{e}")
         return
 
     data = {'char': df_characters, 'batt': df_battles}
@@ -71,8 +73,12 @@ def main():
     root.configure(bg=settings["bg_color"])
 
     style = ttk.Style()
-    style.configure("Treeview.Heading", font=(settings["font_family"], settings["font_size"], "bold"))
-    style.configure("Treeview", font=(settings["font_family"], settings["font_size"]), rowheight=25)
+    style.configure("Treeview.Heading",
+                    font=(settings["font_family"],
+                          settings["font_size"], "bold"))
+    style.configure("Treeview",
+                    font=(settings["font_family"],
+                          settings["font_size"]), rowheight=25)
 
     notebook = ttk.Notebook(root)
     notebook.pack(expand=True, fill="both", padx=10, pady=10)
@@ -92,7 +98,9 @@ def main():
         data['char'] = delete_character(data['char'], char_tree)
         refresh_table(char_tree, data['char'])
 
-    char_tree = create_characters_tab(char_frame, settings, add_char, edit_char, del_char)
+    char_tree = create_characters_tab(char_frame,
+                                      settings, add_char,
+                                      edit_char, del_char)
     refresh_table(char_tree, data['char'])
     notebook.add(char_frame, text=" Персонажи ")
 
@@ -109,9 +117,12 @@ def main():
 
     def del_batt():
         data['batt'] = delete_battle(data['batt'], battle_tree)
-        refresh_table(battle_tree, data['batt'])
+        refresh_table(battle_tree,
+                      data['batt'])
 
-    battle_tree = create_battles_tab(battle_frame, settings, add_batt, edit_batt, del_batt)
+    battle_tree = create_battles_tab(battle_frame,
+                                     settings, add_batt,
+                                     edit_batt, del_batt)
     refresh_table(battle_tree, data['batt'])
     notebook.add(battle_frame, text=" Сражения ")
 
@@ -123,7 +134,8 @@ def main():
     file_menu = tk.Menu(menubar, tearoff=0)
     file_menu.add_command(
         label="Сохранить БД",
-        command=lambda: save_dataframes_pickle(data['char'], data['batt'], data_dir)
+        command=lambda: save_dataframes_pickle(data['char'],
+                                               data['batt'], data_dir)
     )
     file_menu.add_separator()
     file_menu.add_command(label="Выход", command=root.quit)
@@ -170,9 +182,11 @@ def main():
         settings.update(new_settings)
         root.configure(bg=settings["bg_color"])
         style.configure("Treeview.Heading",
-                        font=(settings["font_family"], settings["font_size"], "bold"))
+                        font=(settings["font_family"],
+                              settings["font_size"], "bold"))
         style.configure("Treeview",
-                        font=(settings["font_family"], settings["font_size"]),
+                        font=(settings["font_family"],
+                              settings["font_size"]),
                         rowheight=25)
         for tab_id in notebook.tabs():
             child = notebook.nametowidget(tab_id)
@@ -182,7 +196,10 @@ def main():
     settings_menu = tk.Menu(menubar, tearoff=0)
     settings_menu.add_command(
         label="Параметры интерфейса",
-        command=lambda: open_settings_window(root, settings, apply_settings, settings_path)
+        command=lambda: open_settings_window(root,
+                                             settings,
+                                             apply_settings,
+                                             settings_path)
     )
     menubar.add_cascade(label="Настройки", menu=settings_menu)
 
