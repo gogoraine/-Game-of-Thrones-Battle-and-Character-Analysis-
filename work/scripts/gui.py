@@ -22,6 +22,8 @@ def refresh_table(tree, dataframe):
         dataframe (pd.DataFrame) - данные для отображения.
     Возвращаемый объект: Нет.
     """
+    # Обновляет содержимое таблицы после каждого изменения справочника (добавление, удаление, изменение)
+    # с последующим отображением в графическом интерфейсе
     for item in tree.get_children():
         tree.delete(item)
     for _, row in dataframe.iterrows():
@@ -44,10 +46,12 @@ def delete_character(df_characters, char_tree):
     if not selected:
         messagebox.showwarning("Внимание", "Выберите строку для удаления!")
         return df_characters
-
+    # Получение строки из графического интерфейса
     record_id = int(char_tree.item(selected[0], "values")[0])
     if messagebox.askyesno("Подтверждение", f"Удалить персонажа с ID {record_id}?"):
+        # Удаление строки
         df_characters = df_characters[df_characters["id"] != record_id]
+        # Обновление справочника
         refresh_table(char_tree, df_characters)
     return df_characters
 
@@ -66,7 +70,8 @@ def add_character(root, df_characters, char_tree, settings):
     Возвращаемый объект:
         pd.DataFrame - обновлённый DataFrame персонажей.
     """
-    df_container = [df_characters]   # изменяемый контейнер
+    df_container = [df_characters]   # Изменяемый контейнер создан, чтобы его можно было передать в функцию
+    # on_save, своего рода передача массива по указателю, иначе бы в функции создалась локальная версия
 
     def on_save(data):
         if data["id"] is None:
@@ -105,7 +110,7 @@ def edit_character(root, df_characters, char_tree, settings):
         return df_characters
 
     values = char_tree.item(selected[0], "values")
-
+    # Здесь мы просто меняем значение в справочнике, не меняя ссылку на него
     def on_save(data):
         idx = df_characters[df_characters["id"] == int(data["id"])].index[0]
         for k, v in data.items():
@@ -219,9 +224,11 @@ def create_characters_tab(parent, settings, add_cmd, edit_cmd, del_cmd):
     Возвращаемый объект:
         ttk.Treeview - созданная таблица.
     """
+    # Создаем в отцовском фрейме фрейм для кнопок
     toolbar = tk.Frame(parent, bg=settings["bg_color"])
     toolbar.pack(side="top", fill="x", pady=5)
 
+    # Создаем кнопки
     tk.Button(toolbar, text="Добавить", font=(settings["font_family"], settings["font_size"]),
               bg="#d4edda", command=add_cmd).pack(side="left", padx=5)
     tk.Button(toolbar, text="Редактировать", font=(settings["font_family"], settings["font_size"]),
@@ -230,12 +237,15 @@ def create_characters_tab(parent, settings, add_cmd, edit_cmd, del_cmd):
               bg="#f8d7da", command=del_cmd).pack(side="left", padx=5)
 
     columns = ["id", "имя", "дом", "культура", "пол", "возраст", "жив/мертв"]
+    # Создаем таблицу в старшем фрейме
     tree = ttk.Treeview(parent, columns=columns, show="headings")
+    # Заполняем ее
     for col in columns:
         tree.heading(col, text=col.upper())
         tree.column(col, width=110, anchor="center")
-
+    # Создаем скролл для ориентации по таблице
     scrollbar = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
+    # Собираем его
     tree.configure(yscrollcommand=scrollbar.set)
     tree.pack(side="left", expand=True, fill="both")
     scrollbar.pack(side="right", fill="y")
@@ -307,7 +317,7 @@ def open_settings_window(root, settings_dict, on_save_callback, ini_path):
     preview_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
     preview_label = None
-
+    # Меню выбора цвета
     def choose_bg_color():
         color = colorchooser.askcolor(title="Выберите цвет фона", initialcolor=bg_color_var.get())
         if color[1]:
@@ -316,6 +326,7 @@ def open_settings_window(root, settings_dict, on_save_callback, ini_path):
             if preview_label:
                 preview_label.configure(bg=bg_color_var.get())
 
+    # Меню выбора шрифта
     def update_preview_font(*args):
         family = font_family_var.get()
         size = font_size_var.get()
@@ -328,7 +339,7 @@ def open_settings_window(root, settings_dict, on_save_callback, ini_path):
     font_family_var.trace_add('write', update_preview_font)
     font_size_var.trace_add('write', update_preview_font)
 
-    # Элементы управления интерфейсом
+    # Кнопки, текст меню settings
     tk.Label(preview_frame, text="Фон главного окна", bg=bg_color_var.get(), fg="black")\
         .grid(row=0, column=0, sticky="w", padx=5, pady=5)
     tk.Button(preview_frame, text="Выбрать цвет фона", command=choose_bg_color)\
@@ -348,7 +359,7 @@ def open_settings_window(root, settings_dict, on_save_callback, ini_path):
     preview_label = tk.Label(preview_frame, text="Пример текста (шрифт изменится)",
                              bg=bg_color_var.get(), fg="black")
     preview_label.grid(row=3, column=0, columnspan=2, pady=10)
-
+    # Сохранение изменений внешнего вида интерфейса
     def save_and_close():
         new_settings = {
             "bg_color": bg_color_var.get(),

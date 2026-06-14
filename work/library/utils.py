@@ -1,13 +1,12 @@
 """
 Утилиты для загрузки/сохранения настроек, работы с данными и размножения битв.
 
-Модуль функций: загрузка/сохранение настроек, работа с данными,
-приведение к 3НФ, размножение записей о битвах, сохранение/загрузка pickle.
+Модуль функций: загрузка/сохранение настроек,
+работа с данными, размножение записей о битвах, сохранение/загрузка pickle.
 Автор: Давыдов Д.О.
 """
 import os
 import configparser
-import random
 import pandas as pd
 import numpy as np
 
@@ -76,6 +75,7 @@ def save_dataframes_pickle(df_char, df_batt, data_dir):
         data_dir (str) - путь к папке для сохранения.
     Возвращаемый объект: Нет.
     """
+    # Сохранение датасета в формат pickle
     os.makedirs(data_dir, exist_ok=True)
     char_path = os.path.join(data_dir, "characters.pkl")
     batt_path = os.path.join(data_dir, "battles.pkl")
@@ -94,6 +94,7 @@ def load_dataframes_pickle(data_dir):
     Возвращаемый объект:
         tuple - (df_characters, df_battles) или (None, None), если файлов нет.
     """
+    # Загрузка датасета из pickle для более быстрой работы программы
     char_path = os.path.join(data_dir, "characters.pkl")
     batt_path = os.path.join(data_dir, "battles.pkl")
     if os.path.exists(char_path) and os.path.exists(batt_path):
@@ -122,17 +123,17 @@ def expand_battles_data(df_battles, target_count=100):
     needed = target_count - current_count
     repeat_times = (needed // current_count) + 1
     new_rows = []
-
+    # Процесс расширения датасета
     for _, row in df_battles.iterrows():
         for rep in range(repeat_times):
             if len(new_rows) >= needed:
                 break
+            # Получение и преобразование строки датасета
             new_row = row.to_dict()
             new_id = expanded['id'].max() + len(new_rows) + 1
             new_row['id'] = new_id
             new_row['название'] = f"{row['название']} (копия {rep+1})"
-            year_shift = random.randint(-5, 5)
-            new_year = max(0, row['год'] + year_shift)
+            new_year = max(0, row['год'])
             new_row['год'] = new_year
             new_rows.append(pd.DataFrame([new_row]))
 
@@ -153,8 +154,7 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
     Создаёт DataFrame персонажей и сражений из исходных CSV-файлов.
 
     Описание:
-        Создаёт DataFrame персонажей и сражений из исходных CSV-файлов,
-        приводит к 3 нормальной форме, размножает битвы.
+        Создаёт DataFrame персонажей и сражений из исходных CSV-файлов, размножает битвы.
     Входные параметры:
         battles_csv (str) - путь к battles.csv.
         characters_csv (str) - путь к character-predictions.csv.
@@ -162,7 +162,7 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
     Возвращаемый объект:
         tuple - (df_characters, df_battles) два подготовленных DataFrame.
     """
-    # --- Персонажи ---
+    # Обработка датасета и создание справочника персонажей
     data_char_pred = pd.read_csv(characters_csv)
     char = data_char_pred[["name", "house", "culture", "male", "age", "isAlive"]].copy()
     char["male"] = char["male"].map({1: "Муж", 0: "Жен"})
@@ -175,7 +175,7 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
     char.insert(0, "id", range(1, len(char)+1))
     char.columns = ["id", "имя", "дом", "культура", "пол", "возраст", "жив/мертв"]
 
-    # --- Сражения ---
+    # Обработка датасета и создание справочника сражений
     data_battles = pd.read_csv(battles_csv)
     batt = data_battles[["name", "region", "attacker_king", "defender_king", "attacker_outcome", "year"]].copy()
     batt["winner"] = np.where(batt["attacker_outcome"] == "win", batt["attacker_king"], batt["defender_king"])

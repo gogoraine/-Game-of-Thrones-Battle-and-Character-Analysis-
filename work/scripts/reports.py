@@ -23,16 +23,12 @@ def generate_simple_report(df_characters):
     try:
         output_dir = "../output"
         os.makedirs(output_dir, exist_ok=True)
-
+        # Фильтрация справочника по мертвым
         filtered_df = df_characters[df_characters["жив/мертв"] == "Мертв"]
         final_df = filtered_df[["id", "имя", "дом", "культура", "пол", "возраст"]]
 
         report_path = os.path.join(output_dir, "1_simple_report.txt")
         with open(report_path, "w", encoding="utf-8") as f:
-            line_length = 115
-            sep_line = "=" * line_length
-            title = "ОТЧЕТ: СПИСОК ПОГИБШИХ ПЕРСОНАЖЕЙ"
-            centered_title = title.center(line_length)
             line_length = 115
             sep_line = "=" * line_length
             title = "ОТЧЕТ: СПИСОК ПОГИБШИХ ПЕРСОНАЖЕЙ"
@@ -69,7 +65,7 @@ def generate_stat_report(df_characters):
                 "==================================================\n\n"
                 "--- АНАЛИЗ КАЧЕСТВЕННЫХ ПЕРЕМЕННЫХ ---\n\n"
             )
-
+            # Анализ долей персонажей по полу и статусу жизни
             for col in ["жив/мертв", "пол"]:
                 f.write(f"Переменная: {col.upper()}\n")
                 f.write("-" * 30 + "\n")
@@ -78,7 +74,7 @@ def generate_stat_report(df_characters):
                 for idx in counts.index:
                     f.write(f"  {idx:<10} | Количество: {counts[idx]:<5} | Доля: {percentages[idx]:.2f}%\n")
                 f.write("\n")
-
+            # Качественные признаки возраста
             f.write("--- АНАЛИЗ КОЛИЧЕСТВЕННЫХ ПЕРЕМЕННЫХ (ВОЗРАСТ) ---\n\n")
             age_col = df_characters["возраст"]
             f.write(f"Минимум (min):      {age_col.min()} лет\n")
@@ -107,7 +103,7 @@ def generate_pivot_report(df_characters):
     try:
         output_dir = "../output"
         os.makedirs(output_dir, exist_ok=True)
-
+        # Создание pivot_table
         top_houses = df_characters["дом"].value_counts().head(10).index.tolist()
         df_filtered = df_characters[df_characters["дом"].isin(top_houses)]
         pivot_table = pd.pivot_table(
@@ -150,12 +146,17 @@ def generate_clustered_bar_chart(df_characters):
         os.makedirs(graphics_dir, exist_ok=True)
 
         df_copy = df_characters.copy()
+        # топ-5 домов по численности
         top_houses = df_copy["дом"].value_counts().iloc[1:6].index.tolist()
+        # объединяем остальные в "Другие Великие Дома"
         df_copy["дом_группа"] = df_copy["дом"].apply(lambda x: x if x in top_houses else "Другие Великие Дома")
+        # таблица: строки - дома, столбцы - жив/мертв
         pivot_data = pd.crosstab(df_copy["дом_группа"], df_copy["жив/мертв"])
+        # фиксируем порядок строк
         pivot_data = pivot_data.reindex(top_houses + ["Другие Великие Дома"])
 
         fig, ax = plt.subplots(figsize=(10, 6))
+        # группированная столбчатая диаграмма
         pivot_data.plot(kind="bar", ax=ax, color=["#e74c3c", "#2ecc71"], width=0.8)
         ax.set_title("Соотношение живых и погибших персонажей по Великим Домам", fontsize=14, fontweight="bold", pad=15)
         ax.set_xlabel("Великие Дома Вестероса", fontsize=12)
@@ -163,6 +164,7 @@ def generate_clustered_bar_chart(df_characters):
         ax.set_xticklabels(pivot_data.index, rotation=15)
         ax.grid(axis="y", linestyle="--", alpha=0.7)
         ax.legend(title="Статус персонажа")
+        # подписываем значения над столбцами
         for p in ax.patches:
             height = p.get_height()
             if height > 0:
@@ -198,7 +200,9 @@ def generate_categorized_histogram(df_characters):
         female_ages = df_copy[df_copy["пол"] == "Жен"]["возраст"]
 
         fig, ax = plt.subplots(figsize=(10, 6))
+        # Гистограмма мужчин
         ax.hist(male_ages, bins=20, alpha=0.6, color="#3498db", label="Мужчины", edgecolor="black")
+        # Гистограмма женщин
         ax.hist(female_ages, bins=20, alpha=0.6, color="#e74c3c", label="Женщины", edgecolor="black")
         ax.set_title("Категоризированная гистограмма распределения возраста", fontsize=14, fontweight="bold", pad=15)
         ax.set_xlabel("Возраст персонажей (лет)", fontsize=12)
@@ -231,13 +235,17 @@ def generate_boxplot(df_characters):
         os.makedirs(graphics_dir, exist_ok=True)
 
         df_copy = df_characters.copy()
-        top_houses = df_copy["дом"].value_counts().iloc[1:6].index.tolist()
+        # Топ-5 домов по численности
+        top_houses = df_copy["дом"].value_counts().head(5).index.tolist()
+        # Список возрастов для каждого дома
         data_to_plot = [df_copy[df_copy["дом"] == house]["возраст"] for house in top_houses]
 
         fig, ax = plt.subplots(figsize=(10, 6))
+        # Ящик с усами
         box = ax.boxplot(data_to_plot, patch_artist=True, labels=top_houses,
                          medianprops=dict(color="black", linewidth=1.5),
                          flierprops=dict(marker="o", markerfacecolor="red", markersize=6, linestyle="none"))
+        # Заливка ящиков
         for patch in box["boxes"]:
             patch.set_facecolor("#3498db")
             patch.set_alpha(0.7)
@@ -272,8 +280,11 @@ def generate_scatter_plot(df_battles):
 
         df_copy = df_battles.copy()
         fig, ax = plt.subplots(figsize=(10, 6))
+        # Уникальные регионы
         regions = df_copy["регион"].unique()
+        # Цветовая карта для регионов
         colors = plt.get_cmap("tab10", len(regions))
+        # точечная диаграмма по регионам
         for i, region in enumerate(regions):
             region_data = df_copy[df_copy["регион"] == region]
             ax.scatter(region_data["год"], region_data["id"], label=region,
@@ -283,6 +294,7 @@ def generate_scatter_plot(df_battles):
         ax.set_ylabel("Порядковый номер битвы (ID)", fontsize=12)
         ax.set_xticks(df_copy["год"].unique())
         ax.grid(True, linestyle="--", alpha=0.5)
+        # Легенда справа за границами графика
         ax.legend(title="Регионы Вестероса", bbox_to_anchor=(1.02, 1), loc="upper left", fontsize=10)
         plt.tight_layout()
         img_path = os.path.join(graphics_dir, "4_scatter_plot.png")

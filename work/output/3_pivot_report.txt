@@ -4,7 +4,7 @@
 
 пол              Жен  Муж
 дом                      
-House Frey        43   54
+House Frey        43   53
 House Greyjoy     12   29
 House Lannister   18   31
 House Martell     18   11
@@ -13,6 +13,6 @@ House Stark       23   49
 House Targaryen   30   32
 House Tyrell      18   18
 Night's Watch     26   79
-Нет дома         182  245
+Нет дома         182  244
 
 ==================================================
