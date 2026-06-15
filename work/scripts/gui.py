@@ -7,7 +7,7 @@ from tkinter import ttk, messagebox, colorchooser
 import tkinter.font as tkfont
 import pandas as pd
 from forms import create_character_form, create_battle_form
-from work.library.utils import save_settings
+from library.utils import save_settings
 
 
 def refresh_table(tree, dataframe):

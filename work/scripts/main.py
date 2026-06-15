@@ -7,7 +7,15 @@ import os
 import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
-from work.library.utils import (load_settings, init_dataframes,
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.dirname(current_dir)
+parent_dir = os.path.dirname(base_dir)
+
+if base_dir not in sys.path:
+    sys.path.insert(0, base_dir)
+
+from library.utils import (load_settings, init_dataframes,
                                 save_dataframes_pickle)
 from gui import (
     create_characters_tab, create_battles_tab,
@@ -20,10 +28,6 @@ from reports import (
     generate_clustered_bar_chart, generate_categorized_histogram,
     generate_boxplot, generate_scatter_plot
 )
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-base_dir = os.path.dirname(current_dir)
-parent_dir = os.path.dirname(base_dir)
 
 if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
