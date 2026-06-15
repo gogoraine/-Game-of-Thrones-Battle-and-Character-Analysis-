@@ -20,6 +20,7 @@ def refresh_table(tree, dataframe):
         tree (ttk.Treeview) - виджет таблицы.
         dataframe (pd.DataFrame) - данные для отображения.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     # Обновляет содержимое таблицы после
     # каждого изменения справочника
@@ -42,6 +43,7 @@ def delete_character(df_characters, char_tree):
         char_tree (ttk.Treeview) - таблица.
     Возвращаемый объект:
         pd.DataFrame - DataFrame без удалённой записи.
+    Автор: Давыдов Д.О.
     """
     selected = char_tree.selection()
     if not selected:
@@ -74,6 +76,7 @@ def add_character(root, df_characters, char_tree, settings):
         settings (dict) - настройки интерфейса.
     Возвращаемый объект:
         pd.DataFrame - обновлённый DataFrame персонажей.
+    Автор: Давыдов Д.О.
     """
     df_container = [df_characters]
     # Изменяемый контейнер создан, чтобы его можно было передать в функцию
@@ -113,6 +116,7 @@ def edit_character(root, df_characters, char_tree, settings):
     Возвращаемый объект:
         pd.DataFrame - обновлённый DataFrame
         (или исходный, если ничего не выбрано).
+    Автор: Давыдов Д.О.
     """
     selected = char_tree.selection()
     if not selected:
@@ -151,6 +155,7 @@ def add_battle(root, df_battles, battle_tree, settings):
         settings (dict) - настройки интерфейса.
     Возвращаемый объект:
         pd.DataFrame - обновлённый DataFrame сражений.
+    Автор: Давыдов Д.О.
     """
     df_container = [df_battles]
 
@@ -186,6 +191,7 @@ def edit_battle(root, df_battles, battle_tree, settings):
         settings (dict) - настройки.
     Возвращаемый объект:
         pd.DataFrame - обновлённый DataFrame сражений.
+    Автор: Давыдов Д.О.
     """
     selected = battle_tree.selection()
     if not selected:
@@ -220,6 +226,7 @@ def delete_battle(df_battles, battle_tree):
         battle_tree (ttk.Treeview) - таблица сражений.
     Возвращаемый объект:
         pd.DataFrame - DataFrame без удалённой записи.
+    Автор: Давыдов Д.О.
     """
     selected = battle_tree.selection()
     if not selected:
@@ -248,6 +255,7 @@ def create_characters_tab(parent, settings, add_cmd, edit_cmd, del_cmd):
         add_cmd, edit_cmd, del_cmd (callable) - команды для кнопок.
     Возвращаемый объект:
         ttk.Treeview - созданная таблица.
+    Автор: Давыдов Д.О.
     """
     # Создаем в отцовском фрейме фрейм для кнопок
     toolbar = tk.Frame(parent, bg=settings["bg_color"])
@@ -308,6 +316,7 @@ def create_battles_tab(parent, settings,
         - команды для кнопок.
     Возвращаемый объект:
         ttk.Treeview - созданная таблица.
+    Автор: Давыдов Д.О.
     """
     toolbar = tk.Frame(parent, bg=settings["bg_color"])
     toolbar.pack(side="top", fill="x", pady=5)
@@ -365,6 +374,7 @@ def open_settings_window(root, settings_dict, on_save_callback, ini_path):
         on_save_callback (callable) - функция, принимающая новые настройки.
         ini_path (str) - путь к файлу settings.ini.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     win = tk.Toplevel(root)
     win.title("Настройки интерфейса")

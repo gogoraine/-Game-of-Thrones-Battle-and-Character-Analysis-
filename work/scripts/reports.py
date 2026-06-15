@@ -19,6 +19,7 @@ def generate_simple_report(df_characters):
     Входные параметры:
         df_characters (pd.DataFrame) - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         output_dir = "../output"
@@ -56,6 +57,7 @@ def generate_stat_report(df_characters):
         df_characters (pd.DataFrame)
         - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         output_dir = "../output"
@@ -114,6 +116,7 @@ def generate_pivot_report(df_characters):
         df_characters (pd.DataFrame)
         - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         output_dir = "../output"
@@ -164,6 +167,7 @@ def generate_clustered_bar_chart(df_characters):
         df_characters (pd.DataFrame)
         - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         graphics_dir = "../graphics"
@@ -244,6 +248,7 @@ def generate_categorized_histogram(df_characters):
         df_characters (pd.DataFrame)
         - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         graphics_dir = "../graphics"
@@ -307,6 +312,7 @@ def generate_boxplot(df_characters):
         df_characters (pd.DataFrame)
          - таблица с данными персонажей.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         graphics_dir = "../graphics"
@@ -366,6 +372,7 @@ def generate_scatter_plot(df_battles):
         df_battles (pd.DataFrame)
          - таблица с историческими данными сражений.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     try:
         graphics_dir = "../graphics"

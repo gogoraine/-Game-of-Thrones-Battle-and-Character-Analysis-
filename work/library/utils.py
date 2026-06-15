@@ -22,6 +22,7 @@ def load_settings(ini_path):
         ini_path (str) - путь к файлу settings.ini.
     Возвращаемый объект:
         dict - словарь с ключами: bg_color, btn_color, font_family, font_size.
+    Автор: Давыдов Д.О.
     """
     defaults = {
         "bg_color": "#f0f0f0",
@@ -53,6 +54,7 @@ def save_settings(settings_dict, ini_path):
         settings_dict (dict) - словарь с ключами настроек.
         ini_path (str) - путь к файлу settings.ini.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     config = configparser.ConfigParser()
     config.read(ini_path, encoding="utf-8")
@@ -76,6 +78,7 @@ def save_dataframes_pickle(df_char, df_batt, data_dir):
         df_batt (pd.DataFrame) - DataFrame сражений.
         data_dir (str) - путь к папке для сохранения.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     # Сохранение датасета в формат pickle
     os.makedirs(data_dir, exist_ok=True)
@@ -95,6 +98,7 @@ def load_dataframes_pickle(data_dir):
         data_dir (str) - путь к папке с .pkl файлами.
     Возвращаемый объект:
         tuple - (df_characters, df_battles) или (None, None), если файлов нет.
+    Автор: Давыдов Д.О.
     """
     # Загрузка датасета из pickle для более быстрой работы программы
     char_path = os.path.join(data_dir, "characters.pkl")
@@ -121,6 +125,7 @@ def expand_battles_data(df_battles, target_count=100):
          - желаемое минимальное количество записей.
     Возвращаемый объект:
         pd.DataFrame - расширенный DataFrame.
+    Автор: Давыдов Д.О.
     """
     if len(df_battles) >= target_count:
         return df_battles
@@ -171,6 +176,7 @@ def create_initial_data(battles_csv, characters_csv, target_battles=100):
         target_battles (int) - требуемое количество записей о битвах.
     Возвращаемый объект:
         tuple - (df_characters, df_battles) два подготовленных DataFrame.
+    Автор: Давыдов Д.О.
     """
     # Обработка датасета и создание справочника персонажей
     data_char_pred = pd.read_csv(characters_csv)
@@ -220,6 +226,7 @@ def init_dataframes(battles_csv, characters_csv, data_dir, target_battles=100):
         target_battles (int) - требуемое количество битв.
     Возвращаемый объект:
         tuple - (df_characters, df_battles).
+    Автор: Давыдов Д.О.
     """
     df_char, df_batt = load_dataframes_pickle(data_dir)
     if df_char is None or df_batt is None:

@@ -40,6 +40,8 @@ def main():
     Входные параметры: нет.
 
     Возвращаемый объект: нет.
+
+    Автор: Давыдов Д.О.
     """
     # Пути к файлам и папкам
     settings_path = os.path.join(current_dir, "settings.ini")

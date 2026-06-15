@@ -27,6 +27,7 @@ def create_character_form(parent, title, settings,
         кортеж (id, имя, дом, культура, пол, возраст, статус)
         для режима редактирования.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     dialog = tk.Toplevel(parent)
     dialog.title(title)
@@ -169,6 +170,7 @@ def create_battle_form(parent, title, settings,
         battle_data (tuple, optional) -
         данные редактируемой записи.
     Возвращаемый объект: Нет.
+    Автор: Давыдов Д.О.
     """
     dialog = tk.Toplevel(parent)
     dialog.title(title)
